@@ -1,0 +1,35 @@
+.desk{
+  position: relative;
+  top: calc(100% - 25vh);  
+  left: 0;
+  height: 25vh;
+  background: linear-gradient(to bottom right,#4b3c1c,#65350f,#80471c);
+  border-bottom: 2vh solid #3b1e08;
+  z-index: 1;
+}
+.desk .fan{
+  width: 25%;
+  aspect-ratio: 3 / 2;
+  position: absolute;
+  background: url(../assets/Fan.png) no-repeat center;
+  object-fit: cover;
+  right: 0;
+  top: -20%;
+  z-index: 2;
+}
+@media screen and (min-width: 1336px) {
+  .fan,
+  .pc{
+    top: -25vh;
+  }
+}
+.pc{
+  position: relative;
+  aspect-ratio: 1.54 / 1;
+  width: 30vw;
+  margin: 0 auto;
+  top: -25%;
+  z-index: 2;
+  right: 0;
+  background: url(../assets/pc.png) no-repeat center;
+}

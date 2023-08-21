@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+body{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: url(../assets/bg.jpg) no-repeat center / 100%;
+}
