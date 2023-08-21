@@ -1,7 +1,7 @@
 var timeLeft = 100;
 var elem = document.getElementById('batery');
 
-var timerId = setInterval(countdown, 4000);
+var timerId = setInterval(countdown, 2000);
 
 function countdown() {
   if (timeLeft == 0) {
