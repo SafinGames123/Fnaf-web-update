@@ -20,15 +20,15 @@ function countdown() {
 var hoursLeft = 1;
 var elem2 = document.getElementById('time');
 
-var timerId2 = setInterval(hourdown, 3500);
+var timerId2 = setInterval(hourdown, 4000);
 
 function hourdown() {
-  if (hoursLeft == 6) {
+  if (hoursLeft == 8) {
     clearTimeout(timerId2);
     window.location.href = './weiner.html'
   } 
   
-  else if(hoursLeft != 6) {
+  else if(hoursLeft != 8) {
     elem2.innerHTML = hoursLeft + 'am';
     hoursLeft++;
   }
