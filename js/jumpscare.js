@@ -1,7 +1,11 @@
 var timeLeft = 100;
 var elem = document.getElementById('batery');
 
-var timerId = setInterval(countdown, 2000);
+if (isdorclosd == true){
+  var timerId = setInterval(countdown, 40000);
+} else {
+  var timerId = setInterval(countdown, 20000);
+}
 
 function countdown() {
   if (timeLeft == 0) {
